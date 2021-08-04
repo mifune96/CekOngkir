@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/waybill_navigation"
+    app:startDestination="@id/trackingFragment">
+
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="app.cekongkir.ui.tracking.TrackingFragment"
+        android:label="fragment_waybill"
+        tools:layout="@layout/fragment_tracking" >
+        <action
+            android:id="@+id/action_trackingFragment_to_trackingResultFragment"
+            app:destination="@id/trackingResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackingResultFragment"
+        android:name="app.cekongkir.ui.trackingresult.TrackingResultFragment"
+        android:label="fragment_waybill_detail"
+        tools:layout="@layout/fragment_tracking_result" />
+</navigation>

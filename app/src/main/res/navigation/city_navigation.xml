@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/city_navigation"
+    app:startDestination="@id/cityFragment">
+
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="app.cekongkir.ui.city.CityFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_city" >
+        <action
+            android:id="@+id/action_cityFragment_to_subdistrictFragment"
+            app:destination="@id/subdistrictFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subdistrictFragment"
+        android:name="app.cekongkir.ui.subdistrict.SubdistrictFragment"
+        android:label="fragment_subdistrict"
+        tools:layout="@layout/fragment_subdistrict" />
+</navigation>
